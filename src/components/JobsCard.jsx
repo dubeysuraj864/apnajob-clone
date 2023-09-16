@@ -2,11 +2,13 @@ import {HiBuildingOffice} from "react-icons/hi2";
 import {FaLocationDot,FaWallet,FaSquareParking} from "react-icons/fa6";
 import {GiNotebook} from "react-icons/gi"
 import {MdOutlineWork} from "react-icons/md"
+import {IoIosArrowForward} from "react-icons/io"
 
 function JobsCard() {
   return (
     <>
-      <div className="job-card border p-4 rounded-lg text-gray-500 m-4 cursor-pointer">
+      <div className="job-card border  p-4 rounded-lg text-gray-500 m-4 cursor-pointer relative">
+        <IoIosArrowForward className="text-xl text-green-700 absolute right-2 cursor-pointer"/>
         {/* job title */}
         <div className="job-card-title flex items-start mb-4">
           <div className="job-icon mr-3"><HiBuildingOffice className="text-5xl p-1 border rounded-lg"/></div>

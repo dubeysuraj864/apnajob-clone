@@ -1,3 +1,4 @@
+import FAQs from "../components/FAQs";
 import FilterCategory from "../components/FilterCategory";
 import JobsCard from "../components/JobsCard";
 import Search from "../components/Search";
@@ -59,6 +60,9 @@ function Jobs() {
              <JobsCard/>
             <JobsCard/> <JobsCard/>
             <JobsCard/>
+        </div>
+        <div className="bg-gray-100 w-full flex justify-center">
+            <FAQs/>
         </div>
       </div>
     </>
