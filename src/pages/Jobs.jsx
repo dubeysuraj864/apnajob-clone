@@ -9,12 +9,12 @@ function Jobs() {
     <>
       <div className="Jobs flex flex-col items-center text-gray-700">
         {/* search */}
-        <div className="jobs-search flex justify-center">
+        <div className="jobs-search flex justify-start">
           <Search />
         </div>
-        <div className="category w-[90%] lg:w-[60%]">
+        <div className="category w-[90%] lg:w-[54%]">
           <h2 className="text-2xl font-medium">Showing all jobs</h2>
-            {/* filter */}
+          {/* filter */}
           <div className="jobs-categories flex justify-center items-center gap-3">
             <button>
               <HiFilter className="text-4xl border rounded-full p-2" />
@@ -36,33 +36,28 @@ function Jobs() {
         </div>
         {/* Job Cards */}
         <div className="jobs-cards grid grid-rows-1 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
-            <JobsCard/>
-            <JobsCard/>
-
-            <JobsCard/>
-            <JobsCard/>
-            <JobsCard/>
-            <JobsCard/>
-             <JobsCard/>
-            <JobsCard/>
-             <JobsCard/>
-            <JobsCard/>
-
-
-
-             <JobsCard/>
-            <JobsCard/>
-             <JobsCard/>
-            <JobsCard/>
-             <JobsCard/>
-            <JobsCard/>
-
-             <JobsCard/>
-            <JobsCard/> <JobsCard/>
-            <JobsCard/>
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard />
+          <JobsCard /> <JobsCard />
+          <JobsCard />
         </div>
         <div className="bg-gray-100 w-full flex justify-center">
-            <FAQs/>
+          <FAQs />
         </div>
       </div>
     </>
