@@ -1,4 +1,5 @@
 import FilterCategory from "../components/FilterCategory";
+import JobsCard from "../components/JobsCard";
 import Search from "../components/Search";
 import { HiFilter } from "react-icons/hi";
 
@@ -33,7 +34,9 @@ function Jobs() {
           </div>
         </div>
         {/* Job Cards */}
-        
+        <div className="jobs-cards">
+            <JobsCard/>
+        </div>
       </div>
     </>
   );
