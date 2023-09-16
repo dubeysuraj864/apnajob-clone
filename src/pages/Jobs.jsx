@@ -11,7 +11,7 @@ function Jobs() {
         <div className="jobs-search flex justify-center">
           <Search />
         </div>
-        <div className="category lg:w-[60%]">
+        <div className="category w-[90%] lg:w-[60%]">
           <h2 className="text-2xl font-medium">Showing all jobs</h2>
             {/* filter */}
           <div className="jobs-categories flex justify-center items-center gap-3">
@@ -34,7 +34,30 @@ function Jobs() {
           </div>
         </div>
         {/* Job Cards */}
-        <div className="jobs-cards">
+        <div className="jobs-cards grid grid-rows-1 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
+            <JobsCard/>
+            <JobsCard/>
+
+            <JobsCard/>
+            <JobsCard/>
+            <JobsCard/>
+            <JobsCard/>
+             <JobsCard/>
+            <JobsCard/>
+             <JobsCard/>
+            <JobsCard/>
+
+
+
+             <JobsCard/>
+            <JobsCard/>
+             <JobsCard/>
+            <JobsCard/>
+             <JobsCard/>
+            <JobsCard/>
+
+             <JobsCard/>
+            <JobsCard/> <JobsCard/>
             <JobsCard/>
         </div>
       </div>
