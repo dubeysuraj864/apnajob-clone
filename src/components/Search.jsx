@@ -12,7 +12,7 @@ function Search() {
           <div className="search-input px-10 py-5 drop-shadow-xl bg-white flex flex-col  md:flex-row justify-around items-center rounded-2xl border gap-3 relative md:w-[1040px]">
             <input
               type="text"
-              className="border-0 outline-none pl-4  w-[400px]"
+              className="border-0 outline-none pl-4  md:w-[400px]"
               placeholder="Search jobs by 'skills'"
             />{" "}
             <BiSearch className="text-3xl absolute left-12 top-5 md:top-7 md:left-8 text-gray-500" />
