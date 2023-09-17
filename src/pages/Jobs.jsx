@@ -3,6 +3,7 @@ import FilterCategory from "../components/FilterCategory";
 import JobsCard from "../components/JobsCard";
 import Search from "../components/Search";
 import { HiFilter } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Jobs() {
   return (
@@ -36,25 +37,7 @@ function Jobs() {
         </div>
         {/* Job Cards */}
         <div className="jobs-cards grid grid-rows-1 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard />
-          <JobsCard /> <JobsCard />
-          <JobsCard />
+        <Link to="/job-details">  <JobsCard /></Link>
         </div>
         <div className="bg-gray-100 w-full flex justify-center">
           <FAQs />
