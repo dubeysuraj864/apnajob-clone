@@ -3,9 +3,16 @@ import FilterCategory from "../components/FilterCategory";
 import JobsCard from "../components/JobsCard";
 import Search from "../components/Search";
 import { HiFilter } from "react-icons/hi";
+// import { Link } from "react-router-dom";
+import JobData from "../csvjson.json";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
+// import axios from "axios";
 
 function Jobs() {
+  // const [data, setData] = useState(JobData);
+
+
   return (
     <>
       <div className="Jobs flex flex-col items-center text-gray-700">
@@ -37,7 +44,17 @@ function Jobs() {
         </div>
         {/* Job Cards */}
         <div className="jobs-cards grid grid-rows-1 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
-        <Link to="/job-details">  <JobsCard /></Link>
+
+          {
+            JobData &&
+            JobData.map((data,id)=> {
+                return(
+                
+                <Link to="/job-details"><JobsCard job_titel={data.job_titel} company_name={data.company_name} Location={data.Loction} salery={data.salery} other_role={data.other_role} /></Link>
+        )
+            }) 
+          }
+         
         </div>
         <div className="bg-gray-100 w-full flex justify-center">
           <FAQs />
