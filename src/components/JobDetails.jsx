@@ -49,9 +49,9 @@ function JobDetails() {
         <div className="interested bg-gray-100 flex justify-start md:justify-center items-center py-4 p-2">
           <span className="interested-icon"></span>{" "}
         
-          <span className="how-many-interested flex flex-col md:flex-row items-center gap-4">
+          <span className="how-many-interested flex flex-col md:flex-row md:items-center gap-4">
           <HiUserGroup className="text-2xl mr-2" />
-            <div>184 people interested in this job </div> ● <div>Posted on : 09-Sep-2023 </div> ●
+            <div>184 people interested in this job </div> <span className="hidden md:block">●</span> <div>Posted on : 09-Sep-2023 </div> <span className="hidden md:block">●</span>
             <div>Expires on : 25-Sep-2023</div>
           </span>
         </div>
