@@ -6,7 +6,7 @@ function EmployerLogin() {
   return (
     <>
       <div className="employer-login flex flex-col bg-gray-100 h-screen">
-        <div className="flex items-center justify-around my-20">
+        <div className="flex md:flow-row  flex-row items-center justify-around my-20">
           <div className="left-emp-login">
             {" "}
             <h4 className="highlight font-bold text-xl text-green-700">
@@ -20,10 +20,10 @@ function EmployerLogin() {
             </h3>
           </div>
           <div className="right-emp-login border bg-white p-10 rounded-3xl">
-            <form>
+            <form className="flex flex-col">
               <h1 className="text-2xl font-bold">Employer Login/Sign Up</h1>
 
-              <div className="flex items-center my-4">
+              <div className="flex md:flex-row   items-center my-4">
                 {" "}
                 <label className=" p-4 bg-slate-200 border text-md rounded-xl mr-4">
                   +91
@@ -37,7 +37,7 @@ function EmployerLogin() {
                 />
               </div>
               <Link onClick={scrollToTop} to="/jobs">
-                <button className="min-w-full max-w-full bg-green-700 text-white py-4 px-4 rounded-xl mx-3 md:mx-0 text-xl mb-3">
+                <button className="md:min-w-full md:max-w-full w-[300px] bg-green-700 text-white py-4 px-4 rounded-xl mx-3 md:mx-0 text-xl mb-3">
                   Search jobs
                 </button>
               </Link>
@@ -50,9 +50,69 @@ function EmployerLogin() {
 
         {/* COMPANIES THAT HIRE FROM US */}
 
-        <div className="companies flex justify-center ">
-          <div className="companies-heading">COMPANIES THAT HIRE FROM US</div>
-          <div className="companies-logo"></div>
+        <div className="companies flex flex-col items-center justify-center mx-20">
+          <div className="companies-heading text-2xl font-bold my-10">COMPANIES THAT HIRE FROM US</div>
+          <div className="companies-logo items-center grid grid-cols-7 grid-rows-2 gap-10">
+            <img
+            className="w-["
+              src="https://cdn.apna.co/cloudinary/home_page_images/flipkart.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Swiggy.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/zomato-logo.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/rapido.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Uber.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/PharmEasy.png"
+              alt=""
+            />
+
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Licious.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Byjus.png"
+              alt=""
+            />
+
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Paytm.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Jubliant.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Shaadi.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Indiamart.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Delhivery.png"
+              alt=""
+            />
+            <img
+              src="https://cdn.apna.co/cloudinary/home_page_images/Zepto.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </>

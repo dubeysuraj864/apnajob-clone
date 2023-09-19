@@ -4,17 +4,21 @@ import Navbar from "./components/Navbar";
 import Jobs from "./pages/Jobs";
 import JobDetails from "./components/JobDetails";
 import EmployerLogin from "./pages/EmployerLogin";
+import CandidateLogin from "./pages/CandidateLogin";
 
 function App() {
   return (
     <div className="App overflow-hidden">
       <BrowserRouter>
+      
         <Routes>
+        <Route path="/candidate-login" element={<CandidateLogin />} />
           <Route path="/" element={<Navbar />}>
             <Route index element={<Home />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/job-details" element={<JobDetails />} />
             <Route path="/employer-login" element={<EmployerLogin />} />
+     
           </Route>
         </Routes>
       </BrowserRouter>

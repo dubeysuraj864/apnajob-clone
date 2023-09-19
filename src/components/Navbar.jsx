@@ -47,9 +47,11 @@ function Navbar() {
            <Link to="/employer-login"> <button className="md:mx-20 mx-3 text-green-700">
               Employer Login
             </button></Link>
-            <button className="bg-green-700 text-white py-2 px-4 rounded-md mx-3 md:mx-0">
+          <Link to="/candidate-login">
+          <button className="bg-green-700 text-white py-2 px-4 rounded-md mx-3 md:mx-0">
               Candidate Login
             </button>
+          </Link>
           </div>
         </nav>
       </div>

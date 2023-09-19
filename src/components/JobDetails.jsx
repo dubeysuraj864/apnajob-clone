@@ -14,7 +14,7 @@ function JobDetails() {
   return (
     <>
       <div className="job-details ">
-        <div className="job-details-head p-2 md:px-40 py-10 bg-rose-950 h-auto w-full text-white ">
+        <div className="job-details-head p-2 md:px-40 py-10 bg-[#3e273f] h-auto w-full text-white ">
           <span className="">
             Jobs {">"} Legal {">"} Delhi-NCR {">"} Ram Chowk Dundahera Gurgaon{" "}
             {">"} Manager - Legal - IPO{" "}
