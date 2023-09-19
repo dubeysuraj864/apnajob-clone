@@ -3,15 +3,9 @@ import FilterCategory from "../components/FilterCategory";
 import JobsCard from "../components/JobsCard";
 import Search from "../components/Search";
 import { HiFilter } from "react-icons/hi";
-// import { Link } from "react-router-dom";
 import JobData from "../csvjson.json";
-// import { useState } from "react";
-import { Link } from "react-router-dom";
-// import axios from "axios";
 
 function Jobs() {
-  // const [data, setData] = useState(JobData);
-
 
   return (
     <>
@@ -50,7 +44,7 @@ function Jobs() {
             JobData.map((data,id)=> {
                 return(
                 
-                <Link to="/job-details"><JobsCard job_titel={data.job_titel} company_name={data.company_name} Location={data.Loction} salery={data.salery} other_role={data.other_role} /></Link>
+                <JobsCard job_titel={data.job_titel} company_name={data.company_name} Location={data.Loction} salery={data.salery} other_role={data.other_role} />
         )
             }) 
           }

@@ -5,6 +5,7 @@ import Jobs from "./pages/Jobs"
 import JobDetails from "./components/JobDetails";
 
 function App() {
+ 
   return (
     <div className="App overflow-hidden">
     

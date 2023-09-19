@@ -5,6 +5,9 @@ import { RxDividerVertical } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
 function Search() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
   return (
     <>
       <div className="search flex justify-start">
@@ -23,9 +26,11 @@ function Search() {
               placeholder="All cities 'Delhi' "
             />
             <MdOutlineLocationOn className="text-3xl absolute left-12 top-16 md:top-7 md:left-[500px] text-gray-500 " />
-            <button className="min-w-[240px] max-w-full bg-green-700 text-white py-3 px-4 rounded-md mx-3 md:mx-0">
-              <Link to="/jobs">Search jobs</Link>
+            <Link onClick={scrollToTop} to="/jobs">
+            <button  className="min-w-[240px] max-w-full bg-green-700 text-white py-3 px-4 rounded-md mx-3 md:mx-0">
+             Search jobs
             </button>
+            </Link>
           </div>
         </div>
       </div>
