@@ -1,8 +1,5 @@
-
 import { IoIosArrowDown } from "react-icons/io";
 function FAQs() {
-
-
   return (
     <>
       <div className="faqs bg-white lg:w-[1050px] p-10 drop-shadow-md border-l-[1px] border-t-[1px] border-r-[1px] border-b-[3px] border-green-500 my-20">

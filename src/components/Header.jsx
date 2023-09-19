@@ -5,7 +5,6 @@ function Header() {
     <>
       <div className="header bg-yellow-100 flex flex-col md:flex-row justify-center items-center border-b-2 border-yellow-700 p-2">
         <span className="px-3"> Apna launches International jobs 🎉</span>
-
         <a
           href="http://"
           className="flex items-center text-green-700 font-medium"
@@ -14,7 +13,6 @@ function Header() {
         >
           Check out now <BsArrowRight className="mx-2 font-bold" />
         </a>
-
         <button className="text-green-700 absolute float-right right-96">
           <AiOutlineCloseCircle />
         </button>

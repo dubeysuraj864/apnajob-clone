@@ -7,12 +7,16 @@ import { Link } from "react-router-dom";
 
 function JobsCard(props) {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
     <>
-      <div className="job-card border  p-4 rounded-lg text-gray-500 m-4 cursor-pointer w-[400px] md:w-[500px] relative"><Link onClick={scrollToTop} to="/job-details"> <IoIosArrowForward className="text-xl text-green-700 absolute right-2 cursor-pointer" /></Link>
-       
+      <div className="job-card border  p-4 rounded-lg text-gray-500 m-4 cursor-pointer w-[400px] md:w-[500px] relative">
+        <Link onClick={scrollToTop} to="/job-details">
+          {" "}
+          <IoIosArrowForward className="text-xl text-green-700 absolute right-2 cursor-pointer" />
+        </Link>
+
         {/* job title */}
         <div className="job-card-title flex items-start mb-4">
           <div className="job-icon mr-3">

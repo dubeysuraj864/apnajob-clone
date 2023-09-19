@@ -22,7 +22,7 @@ function Home() {
 
         <Search />
 
-        <div className="moving flex items-center gap-14 animate-marquee absolute bottom-20">
+        <div className="moving flex items-center gap-14 animate-marquee absolute bottom-4">
           <MoveCandidate className="break-words" />
           <MoveCandidate className="break-words" />
           <MoveCandidate className="break-words" />

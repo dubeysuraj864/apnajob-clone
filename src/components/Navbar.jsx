@@ -20,26 +20,24 @@ function Navbar() {
             </div>
             <div className="nav-link-dropdown mx-20 flex items-center gap-1/2 group cursor-pointer transition-all">
               <span>Jobs</span> <RiArrowDropDownLine className="text-2xl" />
-              <div className="absolute z-10 top-24 bg-white px-4 rounded-lg drop-shadow group-hover:block hover:block hidden " >
-             <div className="flex items-start">
-             <ul className="font-light text-sm">
-                  <li className="my-3 pr-6">Work From Home Jobs</li>
-                  <li className="my-3 pr-6">Part Time Jobs</li>
-                  <li className="my-3 pr-6">Jobs for Women</li>
-                  <li className="my-3 pr-6">Full Time Jobs</li>
-                  <li className="my-3 pr-6">Night Shift Jobs</li>
-                  <li className="my-3 pr-6">International Jobs</li>
-                </ul>
-                <ul className="font-light text-sm border-l-2 pl-4">
-                  <li className="my-3 pr-6">Jobs by City</li>
-                  <li className="my-3 pr-6">Jobs by Departments</li>
-                  <li className="my-3 pr-6">Jobs by Company</li>
-                  <li className="my-3 pr-6">Jobs by Qualification</li>
-                  <li className="my-3 pr-6">Others</li>
-           
-                </ul>
-             </div>
-             
+              <div className="absolute z-10 top-24 bg-white px-4 rounded-lg drop-shadow group-hover:block hover:block hidden ">
+                <div className="flex items-start">
+                  <ul className="font-light text-sm">
+                    <li className="my-3 pr-6">Work From Home Jobs</li>
+                    <li className="my-3 pr-6">Part Time Jobs</li>
+                    <li className="my-3 pr-6">Jobs for Women</li>
+                    <li className="my-3 pr-6">Full Time Jobs</li>
+                    <li className="my-3 pr-6">Night Shift Jobs</li>
+                    <li className="my-3 pr-6">International Jobs</li>
+                  </ul>
+                  <ul className="font-light text-sm border-l-2 pl-4">
+                    <li className="my-3 pr-6">Jobs by City</li>
+                    <li className="my-3 pr-6">Jobs by Departments</li>
+                    <li className="my-3 pr-6">Jobs by Company</li>
+                    <li className="my-3 pr-6">Jobs by Qualification</li>
+                    <li className="my-3 pr-6">Others</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="nav-link">Blog</div>

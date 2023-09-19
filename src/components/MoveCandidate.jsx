@@ -10,7 +10,9 @@ function MoveCandidate() {
           />
         </div>
         <div className="right w-[250px] break-words">
-            <h2 className=" flex flex-wrap">Mark has fixed an interview with Elon.</h2>
+          <h2 className=" flex flex-wrap">
+            Mark has fixed an interview with Elon.
+          </h2>
         </div>
       </div>
     </>
