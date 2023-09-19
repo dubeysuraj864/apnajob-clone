@@ -44,9 +44,9 @@ function Navbar() {
           </div>
           {/* --Right Nav */}
           <div className="md:w-1/2 right-nav flex justify-between md:justify-end items-center py-4 md:py-0">
-            <button className="md:mx-20 mx-3 text-green-700">
+           <Link to="/employer-login"> <button className="md:mx-20 mx-3 text-green-700">
               Employer Login
-            </button>
+            </button></Link>
             <button className="bg-green-700 text-white py-2 px-4 rounded-md mx-3 md:mx-0">
               Candidate Login
             </button>

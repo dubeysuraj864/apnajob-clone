@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Jobs from "./pages/Jobs";
 import JobDetails from "./components/JobDetails";
+import EmployerLogin from "./pages/EmployerLogin";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/job-details" element={<JobDetails />} />
+            <Route path="/employer-login" element={<EmployerLogin />} />
           </Route>
         </Routes>
       </BrowserRouter>
