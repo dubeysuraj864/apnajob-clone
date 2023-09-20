@@ -4,8 +4,8 @@ import { IoIosCloudDone, IoIosArrowBack } from "react-icons/io";
 function CandidateLogin() {
   return (
     <>
-      <div className="candidate-login flex">
-        <div className="candidate-left px-10 py-10 flex flex-col items-start justify-between h-screen w-[45%] text-white bg-[#3e273f]">
+      <div className="candidate-login flex flex-col-reverse  md:flex-row">
+        <div className="candidate-left px-10 py-10 flex flex-col items-start justify-between md:h-screen h-auto md:w-[45%] text-white bg-[#3e273f]">
           <div className="welcome">
             <div className="logo my-4">
               <Link to="/">
@@ -41,7 +41,7 @@ function CandidateLogin() {
           </div>
           <div className="candidate-other">
             <h4>Trusted by over 2 lakhs+ companies</h4>
-            <div className="companies-logo items-center grid grid-cols-4 grid-rows-2 gap-2 mt-6 pr-20 ">
+            <div className="companies-logo items-center grid grid-cols-4 grid-rows-2 gap-2 mt-6 md:pr-20 ">
               <img
                 src="https://cdn.apna.co/cloudinary/home_page_images/zomato-logo.png"
                 alt=""
@@ -80,7 +80,7 @@ function CandidateLogin() {
             </div>
           </div>
         </div>
-        <div className="candidate-right flex justify-between flex-col ml-24 text-black px-10 py-10">
+        <div className="candidate-right flex justify-between flex-col md:ml-24 text-black px-10 py-10">
           <div>
             <Link className="flex items-center" to="/">
               <IoIosArrowBack className="text-2xl" /> Back
@@ -90,7 +90,7 @@ function CandidateLogin() {
                 Enter your mobile number
               </h2>
               <input
-                className=" p-4  border rounded-xl w-[400px] bg-slate-50 focus:outline-green-700"
+                className=" p-4  border rounded-xl w-[350px] md:w-[400px] bg-slate-50 focus:outline-green-700"
                 type="tel"
                 name="tel"
                 id="tel"
@@ -98,7 +98,7 @@ function CandidateLogin() {
               />
             </form>
           </div>
-          <div className="tandc flex flex-col items-center ">
+          <div className="tandc flex flex-col mt-8 md:mt-0 md:items-center ">
             By continuing, you agree to the Apna’s <br />
             <div className="flex">
               {" "}
@@ -121,7 +121,7 @@ function CandidateLogin() {
             </div>
             <hr className="border-b-[.5px] mt-2 border w-full" />
             <Link to="/jobs">
-              <button className="min-w-[400px] my-4 max-w-full bg-[#493949a5] text-xl text-white py-3 px-4 rounded-md mx-3 md:mx-0">
+              <button className="md:min-w-[400px] w-[350px] my-4 max-w-full bg-[#493949a5] text-xl text-white py-3 px-4 rounded-md mx-0 md:mx-0">
                 Next
               </button>
             </Link>

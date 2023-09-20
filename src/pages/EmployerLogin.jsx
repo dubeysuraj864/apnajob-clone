@@ -5,8 +5,8 @@ function EmployerLogin() {
   };
   return (
     <>
-      <div className="employer-login flex flex-col bg-gray-100 h-screen">
-        <div className="flex md:flow-row  flex-row items-center justify-around my-20">
+      <div className="employer-login flex flex-col bg-gray-100 md:h-auto">
+        <div className="flex md:flex-row  flex-col items-center justify-around my-20">
           <div className="left-emp-login">
             {" "}
             <h4 className="highlight font-bold text-xl text-green-700">
@@ -19,17 +19,17 @@ function EmployerLogin() {
               Trusted by 5 Cr+ Candidates | 4 Lakh+ Employers
             </h3>
           </div>
-          <div className="right-emp-login border bg-white p-10 rounded-3xl">
+          <div className="right-emp-login border bg-white mt-10 p-10 rounded-3xl">
             <form className="flex flex-col">
               <h1 className="text-2xl font-bold">Employer Login/Sign Up</h1>
 
               <div className="flex md:flex-row   items-center my-4">
                 {" "}
-                <label className=" p-4 bg-slate-200 border text-md rounded-xl mr-4">
+                <label className=" p-4  bg-slate-200 border text-md rounded-xl mr-4">
                   +91
                 </label>
                 <input
-                  className=" p-4  border rounded-xl w-[400px] bg-slate-200"
+                  className=" p-4  border rounded-xl w-[240px] md:w-[400px] bg-slate-200"
                   type="tel"
                   name="mobile-number"
                   id="mobile-number"
@@ -50,9 +50,9 @@ function EmployerLogin() {
 
         {/* COMPANIES THAT HIRE FROM US */}
 
-        <div className="companies flex flex-col items-center justify-center mx-20">
+        <div className="companies flex flex-col items-center justify-center mx-5 pb-10 md:pb-0 md:mx-20">
           <div className="companies-heading text-2xl font-bold my-10">COMPANIES THAT HIRE FROM US</div>
-          <div className="companies-logo items-center grid grid-cols-7 grid-rows-2 gap-10">
+          <div className="companies-logo items-center grid  grid-cols-4 grid-rows-4 md:grid-cols-7   md:grid-rows-2   gap-4 md:gap-10">
             <img
             className="w-["
               src="https://cdn.apna.co/cloudinary/home_page_images/flipkart.png"
