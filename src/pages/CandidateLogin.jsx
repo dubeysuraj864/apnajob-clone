@@ -44,38 +44,38 @@ function CandidateLogin() {
             <div className="companies-logo items-center grid grid-cols-4 grid-rows-2 gap-2 mt-6 md:pr-20 ">
               <img
                 src="https://cdn.apna.co/cloudinary/home_page_images/zomato-logo.png"
-                alt=""
+                alt="FIELD1"
               />
 
               <img
                 className="invert"
                 src="https://cdn.apna.co/cloudinary/home_page_images/Uber.png"
-                alt=""
+                alt="FIELD1"
               />
 
               <img
                 src="https://cdn.apna.co/cloudinary/home_page_images/Licious.png"
-                alt=""
+                alt="FIELD1"
               />
 
               <img
                 src="https://cdn.apna.co/cloudinary/home_page_images/Paytm.png"
-                alt=""
+                alt="FIELD1"
               />
 
               <img
                 src="https://cdn.apna.co/cloudinary/home_page_images/Indiamart.png"
-                alt=""
+                alt="FIELD1"
               />
               <img
                 className="invert"
                 src="https://cdn.apna.co/cloudinary/home_page_images/Delhivery.png"
-                alt=""
+                alt="FIELD1"
               />
               <img
                 className="ml-10"
                 src="https://cdn.apna.co/cloudinary/home_page_images/Zepto.png"
-                alt=""
+                alt="FIELD1"
               />
             </div>
           </div>
@@ -115,7 +115,7 @@ function CandidateLogin() {
                 className="mr-2 bg-green-700 text-2xl focus:bg-green-700 active:bg-green-700"
                 type="checkbox"
                 name="accept"
-                id=""
+                id="FIELD1"
               />
               <span>I would like to get latest job updates on Whatsapp</span>
             </div>

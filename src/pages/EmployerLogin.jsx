@@ -56,61 +56,61 @@ function EmployerLogin() {
             <img
             className="w-["
               src="https://cdn.apna.co/cloudinary/home_page_images/flipkart.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Swiggy.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/zomato-logo.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/rapido.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Uber.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/PharmEasy.png"
-              alt=""
+              alt="FIELD1"
             />
 
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Licious.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Byjus.png"
-              alt=""
+              alt="FIELD1"
             />
 
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Paytm.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Jubliant.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Shaadi.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Indiamart.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Delhivery.png"
-              alt=""
+              alt="FIELD1"
             />
             <img
               src="https://cdn.apna.co/cloudinary/home_page_images/Zepto.png"
-              alt=""
+              alt="FIELD1"
             />
           </div>
         </div>

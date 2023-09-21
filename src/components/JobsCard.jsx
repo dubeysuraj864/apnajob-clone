@@ -51,7 +51,7 @@ function JobsCard(props) {
         {/* pay */}
         <div className="job-pay flex items-center my-2">
           <span className="pay-icon mr-4">
-            <FaWallet className="" />
+            <FaWallet className="FIELD1" />
           </span>
           <span className="how-much-pay text-sm"> {props.salery}</span>
         </div>
