@@ -4,18 +4,28 @@ import { FaLocationDot, FaWallet, FaSquareParking } from "react-icons/fa6";
 // import {MdOutlineWork} from "react-icons/md"
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+// import data from "../csvjson.json";
 
 function JobsCard(props) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
+
   return (
     <>
       <div className="job-card border  p-4 rounded-lg text-gray-500 m-4 cursor-pointer w-[400px] md:w-[500px] relative">
-        <Link onClick={scrollToTop} to="/job-details">
-          {" "}
-          <IoIosArrowForward className="text-xl text-green-700 absolute right-2 cursor-pointer" />
-        </Link>
+        {/* {data &&
+          data.map((x) => {
+            return (
+              <>
+               
+              </>
+            );
+          })} */}
+           <Link onClick={scrollToTop} to={`/job-details/${props.FIELD1}`}>
+                  {" "}
+                  <IoIosArrowForward className="text-xl text-green-700 absolute right-2 cursor-pointer" />
+                </Link>
 
         {/* job title */}
         <div className="job-card-title flex items-start mb-4">

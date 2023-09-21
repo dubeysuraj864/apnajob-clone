@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import {
   HiBuildingOffice2,
   HiMiniCurrencyRupee,
@@ -9,20 +10,28 @@ import { Link } from "react-router-dom";
 import { BsChatRightText, BsStars } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";
 import { GoShareAndroid } from "react-icons/go";
+import { useParams } from "react-router-dom";
 
-function JobDetails() {
+function JobDetails({ data }) {
+  const { FIELD1 } = useParams();
   return (
     <>
+    
       <div className="job-details ">
-        <div className="job-details-head p-2 md:px-40 py-10 bg-[#3e273f] h-auto w-full text-white ">
+        
+        {data && data.filter((x) => x.FIELD1 == FIELD1)
+          .map((x, index) => {
+            return (
+              <div key={index}>
+              <div className="job-details-head p-2 md:px-40 py-10 bg-[#3e273f] h-auto w-full text-white ">
           <span className="">
-            Jobs {">"} Legal {">"} Delhi-NCR {">"} Ram Chowk Dundahera Gurgaon{" "}
-            {">"} Manager - Legal - IPO{" "}
+            Jobs {">"} Legal {">"} Delhi-NCR {">"} {x.Loction}{" "}
+            {">"} {x.job_titel}{" "}
           </span>
 
           <span className="job-details">
             <h1 className="text-4xl font-semibold mt-10 flex flex-col md:flex-row justify-between  md:items-center">
-              <span>Manager - Legal - IPO</span>{" "}
+              <span>{x.job_titel}</span>{" "}
               <span>
                 {" "}
                 <button className="min-w-[240px] max-w-full bg-green-700 text-white py-3 px-4 rounded-md my-4 md:my-0 text-lg md:mx-0">
@@ -30,18 +39,18 @@ function JobDetails() {
                 </button>
               </span>
             </h1>
-            <h5 className="mt-2 font-light">Neugene International Inc</h5>
+            <h5 className="mt-2 font-light">{x.company_name}</h5>
             <div className="flex items-center mt-2 font-light">
               <HiBuildingOffice2 className="text-xl mr-2" />
-              <span>Ram Chowk Dundahera Gurgaon</span>
+              <span>{x.Loction}</span>
             </div>
             <div className="flex items-center mt-1 font-light">
               <HiMiniCurrencyRupee className="text-xl mr-2" />
-              69,000 - 149,999 per month (Fixed + incentives)
+              {x.salery} per month (Fixed + incentives)
             </div>
             <span className="flex font-light flex-nowrap items-center bg-white w-max px-3 py-1 rounded-full mt-6 text-rose-950">
               <BiSolidTime className="text-xl mr-2 " />
-              Full-time
+              {x.other_role}
             </span>
           </span>
         </div>
@@ -148,6 +157,10 @@ function JobDetails() {
             </span>
           </div>
         </div>
+              </div>
+            );
+          })}
+        
       </div>
     </>
   );

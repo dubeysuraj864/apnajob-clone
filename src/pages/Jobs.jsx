@@ -41,6 +41,7 @@ function Jobs() {
             JobData.map((data, id) => {
               return (
                 <JobsCard
+                FIELD1={data.FIELD1}
                   job_titel={data.job_titel}
                   company_name={data.company_name}
                   Location={data.Loction}

@@ -5,20 +5,22 @@ import Jobs from "./pages/Jobs";
 import JobDetails from "./components/JobDetails";
 import EmployerLogin from "./pages/EmployerLogin";
 import CandidateLogin from "./pages/CandidateLogin";
+import data from "./csvjson.json";
 
 function App() {
   return (
     <div className="App overflow-hidden">
       <BrowserRouter>
-      
         <Routes>
-        <Route path="/candidate-login" element={<CandidateLogin />} />
+          <Route path="/candidate-login" element={<CandidateLogin />} />
           <Route path="/" element={<Navbar />}>
             <Route index element={<Home />} />
             <Route path="/jobs" element={<Jobs />} />
-            <Route path="/job-details" element={<JobDetails />} />
+            <Route
+              path="/job-details/:FIELD1"
+              element={<JobDetails data={data} />}
+            />
             <Route path="/employer-login" element={<EmployerLogin />} />
-     
           </Route>
         </Routes>
       </BrowserRouter>
