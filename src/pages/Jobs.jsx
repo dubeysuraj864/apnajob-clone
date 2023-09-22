@@ -97,6 +97,7 @@ function Jobs() {
               ) {
                 return val;
               }
+              return val;
             }).map((data, id) => {
               return (
                 <JobsCard
@@ -109,19 +110,7 @@ function Jobs() {
                 />
               );
             })}
-          {/* {JobData &&
-            JobData.map((data, id) => {
-              return (
-                <JobsCard
-                FIELD1={data.FIELD1}
-                  job_titel={data.job_titel}
-                  company_name={data.company_name}
-                  Location={data.Loction}
-                  salery={data.salery}
-                  other_role={data.other_role}
-                />
-              );
-            })} */}
+     
         </div>
         <div className="bg-gray-100 w-full flex justify-center">
           <FAQs />
