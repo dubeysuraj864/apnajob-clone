@@ -97,7 +97,6 @@ function Jobs() {
               ) {
                 return val;
               }
-              return val;
             }).map((data, id) => {
               return (
                 <JobsCard
@@ -110,7 +109,6 @@ function Jobs() {
                 />
               );
             })}
-     
         </div>
         <div className="bg-gray-100 w-full flex justify-center">
           <FAQs />
