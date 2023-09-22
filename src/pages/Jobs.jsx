@@ -84,7 +84,9 @@ function Jobs() {
         {/* Job Cards */}
         <div className="jobs-cards grid grid-rows-1 grid-cols-1 md:grid-rows-2 md:grid-cols-2">
           {JobData &&
+            // eslint-disable-next-line array-callback-return
             JobData.filter((val) => {
+           
               if (searchTerm === "" && searchLocation === "") {
                 return val;
               } else if (
@@ -96,8 +98,11 @@ function Jobs() {
                 )
               ) {
                 return val;
-              }
-            }).map((data, id) => {
+              } 
+            
+            }
+         
+              ).map((data, id) => {
               return (
                 <JobsCard
                   FIELD1={data.FIELD1}
